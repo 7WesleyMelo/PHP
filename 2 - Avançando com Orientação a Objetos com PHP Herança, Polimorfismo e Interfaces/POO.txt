@@ -1,0 +1,49 @@
+POO
+
+$umaConta = new Conta(); é uma referência para o Objeto.
+require 'src/Conta.php';
+$primeiraConta = new Conta();
+$primeiraConta->saldo = 200;
+$primeiraConta->cpfTitular = '123.456.789-10';
+$primeiraConta->nomeTitular = 'Vinicius Dias';
+var_dump($primeiraConta); // Verifique que o objeto já possui os dados necessários de uma conta criada
+$segundaConta = new Conta();
+$segundaConta->cpfTitular = '987.654.321-10';
+$segundaConta->nomeTitular = 'Patricia';
+$segundaConta->saldo = 1500;
+var_dump($primeiraConta); // Verifique que o objeto não teve seus valores alterados
+var_dump($segundaConta); // Note que este objeto possui os valores da segunda conta criada
+
+
+Nesta aula, aprendemos:
+
+Que podemos definir tipos complexos com PHP através de classes
+Que objeto (ou instância) é o nome dado para cada valor gerado através de uma classe
+Que objetos possuem valores, e esses valores são chamados de atributos
+Que os atributos dos objetos são individuais, ou seja, não estão atrelados a todas as instâncias da mesma classe
+Que a palavra new é utilizada para criar um objeto, e devolve o endereço dele
+Este endereço é armazenado em uma variável, e através desta variável podemos acessar o objeto e seus atributos
+
+
+Em programação orientada a objetos (POO), a distinção entre classe e objeto é fundamental e serve como base para essa abordagem de programação. Aqui estão as principais diferenças:
+
+Definição:
+
+Classe: Uma classe é um modelo ou um blueprint a partir do qual os objetos são criados. Ela define um tipo, incorporando dados (atributos) e comportamentos (métodos) que os objetos desse tipo compartilharão.
+Objeto: Um objeto é uma instância de uma classe. Quando uma classe é instanciada, um objeto é criado com o estado e comportamento definidos pela classe. Cada objeto tem sua própria identidade e seu conjunto de dados (atributos) que podem ser diferentes de outros objetos da mesma classe.
+
+Uso:
+
+Classe: As classes são usadas para definir propriedades e comportamentos comuns que serão compartilhados por um tipo de objeto. Uma classe é como um rascunho ou um plano.
+Objeto: Os objetos são usados para representar entidades concretas no programa. Eles são criados e manipulados em tempo de execução e podem ter estados diferentes um do outro, mesmo sendo do mesmo tipo (ou seja, criados a partir da mesma classe).
+Exemplo Prático:
+
+Classe: Imagine uma classe chamada Carro. Ela pode ter atributos como marca, modelo, ano e métodos como ligar(), desligar(), acelerar().
+Objeto: Um objeto específico dessa classe, como meuCarro, pode ser uma instância da classe Carro com atributos específicos (marca = Toyota, modelo = Corolla, ano = 2022) e com a capacidade de executar os métodos definidos na classe Carro.
+
+Características:
+
+Classe: As classes são abstratas e não ocupam espaço na memória até que um objeto seja instanciado a partir delas. Elas definem as propriedades e os comportamentos.
+Objeto: Os objetos são concretos e ocupam espaço na memória. Eles representam instâncias específicas com valores de atributos específicos.
+Em resumo, a classe é como um molde, enquanto os objetos são entidades concretas criadas usando esse molde. A programação orientada a objetos utiliza esse conceito para criar programas que são modulares, reutilizáveis e fáceis de entender e manter.
+
