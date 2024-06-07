@@ -9,7 +9,7 @@ require_once 'autoload.php';
 $autenticador = new Autenticador();
 $umDiretor = new Diretor(
     'João da Silva', 
-    new Cpf('054.216.021-84'), 
+    new Cpf('000.111.222-34'), 
     3000
 );
 

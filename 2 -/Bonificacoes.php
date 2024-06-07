@@ -7,28 +7,28 @@ use Alura\Banco\Modelo\Funcionario\{Gerente, Diretor, Desenvolvedor, EditorDeVid
 use Alura\Banco\Service\ControladorDebonificacoes;
 
 $umFuncionario = new Desenvolvedor(
-    'Wesley Melo', 
-    new Cpf('054.216.021-84'),  
+    'Luiz Andrade', 
+    new Cpf('111.222.333-45'),  
     1000
 );
 
 $umFuncionario->sobeDeNivel();
 
 $doisFuncionario = new Gerente(
-    'Wesley Santos', 
-    new Cpf('054.216.021-84'), 
+    'Gabriel', 
+    new Cpf('111.222.333-45'), 
     3000
 );
 
 $umDiretor = new Diretor(
-    'Wesley Oliveira', 
-    new Cpf('054.216.021-84'),
+    'Heitor', 
+    new Cpf('111.222.333-45'),
     5000
 );
 
 $umEditor = new EditorDeVideo(
     'Paulo',
-    new Cpf('054.216.021-84'),
+    new Cpf('111.222.333-45'),
     1500
 );
 

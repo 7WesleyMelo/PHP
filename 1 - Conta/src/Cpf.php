@@ -26,8 +26,8 @@ Class Cpf
         // echo $cpfLimpo;
         // exit;
         if(strlen($cpfLimpo) != 11){
-            echo 'CPF inválido';
-            exit();
+            return 'CPF inválido';
+            // exit();
         }
 
          // Primeiro dígito verificador
@@ -55,10 +55,10 @@ Class Cpf
         if($dv1 == $cpfLimpo[9] && $dv2 == $cpfLimpo[10]){
             // echo 'Cpf válido!';
             // exit();\
-            return;
+            return 'Cpf válido!';
         }
 
-        echo 'Cpf inválido';
+        return 'Cpf inválido';
         
     }
 }

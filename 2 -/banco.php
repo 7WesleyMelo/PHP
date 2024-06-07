@@ -1,13 +1,22 @@
 <?php
 
-require_once 'src/Conta.php';
-require_once 'src/Endereco.php';
-require_once 'src/Titular.php';
-require_once 'src/Cpf.php';
+// require_once './src/Modelo/Conta/Conta.php';
+// require_once './src/Modelo/Endereco.php';
+// require_once './src/Modelo/Pessoa.php';
+// require_once './src/Modelo/Conta/Titular.php';
+// require_once './src/Modelo/Cpf.php';
+
+require_once 'autoload.php';
+
+use Alura\Banco\Modelo\Conta\Titular;
+use Alura\Banco\Modelo\Endereco;
+use Alura\Banco\Modelo\Cpf;
+use Alura\Banco\Modelo\Conta\Conta; 
 
 
-$endereco = new Endereco('Várzea Grande', 'Jardim Eldorado', 'Rua', '55');
-$primeiraConta = new Conta(new Titular(new Cpf('054.216.021-84'), 'Vinicius Dias', $endereco));
+
+$endereco = new Endereco('Cidade Grande', 'Jardins', 'Rua', '55');
+$primeiraConta = new Conta(new Titular(new Cpf('111.222.333-45'), 'André Souza', $endereco));
 $primeiraConta->depositar(500);
 $primeiraConta->sacar(300); //Certo
 // $primeiraConta->defineCpfTitular('123.456.789-10');

@@ -6,7 +6,7 @@ require_once 'vendor/autoload.php';
 
 $pdo = \Alura\Pdo\Infraestructure\Persistence\ConnectionCreator::createConnection();   
 
-$student = new Student(null, 'Emelly Melo', new \DateTimeImmutable('1999-08-28'));
+$student = new Student(null, 'Roberto Justus', new \DateTimeImmutable('1999-08-28'));
 
 $sqlInsert = "INSERT INTO students (name, birth_date) VALUES (?, ?)";
 $statement = $pdo->Prepare($sqlInsert);
