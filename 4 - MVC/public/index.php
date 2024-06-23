@@ -14,9 +14,9 @@ use Alura\Mvc\Repository\VideoRepository;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-$dns = "pgsql:host=localhost;port=5432;dbname=alura";
-$user = "postgres";
-$password = "95495312";
+$dns = "pgsql:host=localhost;port=;dbname=";
+$user = "";
+$password = "";
 
 $pdo = new PDO($dns, $user, $password);
 
