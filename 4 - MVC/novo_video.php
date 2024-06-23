@@ -3,9 +3,9 @@
 use Alura\Mvc\Entity\Video;
 use Alura\Mvc\Repository\VideoRepository;
 
-$dns = "pgsql:host=localhost;port=5432;dbname=alura";
-$user = "postgres";
-$password = "95495312";
+$dns = "pgsql:host=localhost;port=;dbname=";
+$user = "";
+$password = "";
 
 $pdo = new PDO($dns, $user, $password);
 
