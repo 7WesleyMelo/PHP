@@ -1,7 +1,6 @@
 <?php
-    $dns = "pgsql:host=localhost;port=5432;dbname=alura";
-    $user = "postgres";
-    $password = "95495312";
+    $dns = "pgsql:host=localhost;port=;dbname=
+    $password = "";
 
     $pdo = new PDO($dns, $user, $password);
 
